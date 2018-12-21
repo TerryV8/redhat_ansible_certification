@@ -112,8 +112,8 @@ Edit vsftpd-configure.yml:
         dest: '{{ vsftpd_ano_root }}/README'
         content: "welcome to the FTP  {{ ansible_fqdn }}"
         setype: '{{ vsftpd_setype}}'
-        
-        
+      
+This playbook site.yml should include the plays from the other 2 playbooks by containing exaactly 2 lines:      
         
     - include: ftpclient.yml
     - include: vsftpd-configure.yml
