@@ -116,7 +116,6 @@ Edit vsftpd-configure.yml:
         
         
     - include: ftpclient.yml
-    
     - include: vsftpd-configure.yml
     
         
