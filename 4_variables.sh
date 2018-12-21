@@ -17,7 +17,16 @@ web_package = httpd
 
 
 
-- tasks:
+- hosts: all
+  var_files:
+    - vars/users.yml
+
+  tasks:
     uri:
       url: http://servera
       status_code: 200
+
+
+Edit vars/users.yml:
+user: joe
+home: /home/joe
