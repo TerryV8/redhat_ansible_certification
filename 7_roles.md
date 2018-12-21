@@ -19,6 +19,9 @@ ansible webservers -a 'curl -s http://localhost'
 
 curl -S http://servera.lab.example.com
 
+To bypass any ssl strict checking:
+curl -k https://servera.lab.example.com
+
 
 # in the roles/myvhosts/meta/main.yml:
 dependencies:
