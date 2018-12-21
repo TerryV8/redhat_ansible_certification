@@ -1,3 +1,17 @@
+# Install tower
+
+ssh root@tower
+
+wget -O http://>>>/ansible-tower-setup....tar.gz
+
+inventory shoudl contains:
+admin_password='redhat'
+pg_password='redhat'
+rabbitmq_password='redhat'
+
+./setup.sh
+
+
 # Inside ANSIBLE TOWER UI
 
 login/password: admin/redhat
